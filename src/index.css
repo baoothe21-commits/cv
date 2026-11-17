@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  background-color: #0C0C0C;
+  color: #D7E2EA;
+  font-family: 'Kanit', sans-serif;
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient Hero Heading */
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradient Text for Accent */
+.accent-gradient {
+  background: linear-gradient(135deg, #BBCCD7 0%, #FFFFFF 50%, #646973 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Contact Button Custom Styling */
+.contact-btn-glow {
+  background: linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%);
+  box-shadow: 0px 4px 4px rgba(181, 1, 167, 0.25), inset 4px 4px 12px #7721B1;
+  outline: 2px solid #ffffff;
+  outline-offset: -3px;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.contact-btn-glow:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0px 8px 24px rgba(182, 0, 168, 0.45), inset 4px 4px 14px #9b3be3;
+}
+
+.contact-btn-glow:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0C0C0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2e35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #474e5a;
+}
